@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>✨ Creative Blog Platform</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="branding">
+        <img src="https://img.icons8.com/fluency/48/blog.png" alt="Blog Icon" />
+        <h1 class="title-gradient">Creative Blog Platform</h1>
+      </div>
+      <button id="mode-toggle" class="flutter-btn toggle">🌗 Toggle Mode</button>
+    </header>
+
+    <section class="form-section">
+      <h2>✍️ Write a New Blog</h2>
+      <input type="text" id="title" placeholder="Enter blog title..." />
+      <textarea id="content" placeholder="Write your story..."></textarea>
+      <select id="grade">
+        <option value="">Select Level</option>
+        <option value="Beginner">Beginner</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="Advanced">Advanced</option>
+      </select>
+      <button onclick="addPost()" class="flutter-btn">➕ Publish Post</button>
+    </section>
+
+    <div class="grading-column">
+      <h3>📊 Grading Levels</h3>
+      <ul>
+        <li><span class="badge beginner"></span> Beginner - For Starters</li>
+        <li><span class="badge intermediate"></span> Intermediate - Moderate Skill</li>
+        <li><span class="badge advanced"></span> Advanced - Expert Level</li>
+      </ul>
+    </div>
+
+    <section id="posts" class="posts">
+      <h2>📰 Blog Feed</h2>
+    </section>
+  </div>
+
+  <footer>
+    <p>🚀 Built with ❤️ by Aditya Mendhe &middot; <a href="https://github.com/SlaxAURA">GitHub</a> | <a href="https://www.linkedin.com/in/aditya-mendhe-034ab630b">LinkedIn</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
